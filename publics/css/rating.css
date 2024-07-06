@@ -1,0 +1,22 @@
+.rating-Star{
+  margin: auto;
+  text-align:left;
+  color: yellow;
+}
+.rating-wrapper input {
+  display: none;
+}
+
+.rating-Star input + label{
+  
+  cursor: pointer;
+}
+
+.rating-Star input:checked + label ~ label{
+  color: #838383;
+  
+}
+.rating-Star label:active{
+  
+  transform: scale(0.8);
+}
