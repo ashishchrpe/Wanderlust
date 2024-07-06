@@ -38,7 +38,7 @@ module.exports.createListing= async (req,res,next)=>{
   .send();
     if(!req.body.listing){
         throw (new ExpressError(404,"Sent a valid data for listing"));
-    }
+    } 
         const newListing= new Listing (req.body.listing);
         newListing.owner= req.user._id;
         newListing.geometry= responce.body.features[0].geometry;

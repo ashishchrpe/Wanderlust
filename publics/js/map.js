@@ -6,7 +6,7 @@
     style : "mapbox://styles/mapbox/streets-v12",
     center: listing.geometry.coordinates, // starting position [lng, lat]  listing.geometry.coordinates
     zoom: 9 ,// starting zoom
-  });
+  }); 
     const marker = new mapboxgl.Marker({color :"red"})
     .setLngLat(listing.geometry.coordinates)
     .setPopup(new mapboxgl.Popup({ofset:25})

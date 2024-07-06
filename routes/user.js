@@ -7,7 +7,7 @@ const{isLoggedIn} =require("../middleware.js");
 
 const userControllers = require("../controllers/user.js");
 const wrapAsync = require("../utils/wrapAsync.js");
-
+ 
 router.route("/signup")
 .get(userControllers.renderSignupForm)
 .post(wrapAsync(userControllers.signup));

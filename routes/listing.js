@@ -10,7 +10,7 @@ const{isLoggedIn,isOwner,validateListing} =require("../middleware.js");
 const listingController= require("../controllers/listing.js");
 const filterController= require("../controllers/filter.js");
 
-
+ 
 router.route("/")
 .get(wrapAsync(listingController.index))
 .post(isLoggedIn,validateListing,wrapAsync(listingController.createListing));

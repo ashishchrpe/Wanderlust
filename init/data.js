@@ -301,7 +301,7 @@ const sampleListings = [
     geometry: { type: 'Point', coordinates: [ -84.00000000   , 10.00000000 ] },
     category:['Rooms', 'Camping'],
   },
-  {
+  { 
     title: "Historic Cottage in Charleston",
     description:
       "Experience the charm of historic Charleston in this beautifully restored cottage with a private garden.",

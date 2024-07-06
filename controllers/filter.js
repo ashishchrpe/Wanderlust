@@ -96,7 +96,7 @@ module.exports.Trending= async(req,res)=>{
 
 
   module.exports.Boats= async(req,res)=>{
-    
+     
     const allListing=await Listing.find({});
     res.render("filters/Boats.ejs",{allListing});
     

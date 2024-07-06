@@ -55,7 +55,7 @@ const listingSchema= new Schema({
          "Mountains", "Castles", "Amazing Pools","Sea",
          "Camping","farms","Arctic","Domes","Boats"],
   },
-});
+}); 
  
 listingSchema.post("findOneAndDelete",async(listing)=>{
     if(listing){
