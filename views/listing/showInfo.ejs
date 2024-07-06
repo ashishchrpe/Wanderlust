@@ -33,8 +33,8 @@
    <% if(currUser && currUser.id === (ListingInfo.owner.id)){ %>
     
     <div class="btns">
-    <a href="/listing/<%=ListingInfo.id%>/edit" class="btn btn-dark edit-btn offset-3 mb-5" >edit</a>
-    <form method="post" action="/listing/<%=ListingInfo.id%>?_method=DELETE">
+    <a href="https://wanderlust-8hze.onrender.com/listing/<%=ListingInfo.id%>/edit" class="btn btn-dark edit-btn offset-3 mb-5" >edit</a>
+    <form method="post" action="https://wanderlust-8hze.onrender.com/listing/<%=ListingInfo.id%>?_method=DELETE">
        <button class="btn btn-dark offset-5 mb-5"  >Delete</button>
     </form>
     
@@ -46,7 +46,7 @@
     <% if(currUser){%>
       <hr>
       <h4>Leave a Review</h4>
-      <form action="/listing/<%=ListingInfo.id%>/reviews" method="post"  >
+      <form action="https://wanderlust-8hze.onrender.com/listing/<%=ListingInfo.id%>/reviews" method="post"  >
         
         <legend>First rating:</legend>
         <fieldset class="rating-Star">
@@ -92,7 +92,7 @@
               <div class="card-text mt-2"><%= review.Comment  %></div>
               <div class="card-text mt-2 mb-2"><%= review.rating %> <b>&#10032</b></div>
               
-              <form method="post" action="/listing/<%=ListingInfo.id%>/reviews/<%= review.id %>?_method=DELETE">
+              <form method="post" action="https://wanderlust-8hze.onrender.com/listing/<%=ListingInfo.id%>/reviews/<%= review.id %>?_method=DELETE">
                 <button class="btn btn-dark btn-sm mb-2">Delete</button>
               </form>
             </div>
